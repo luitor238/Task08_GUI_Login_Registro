@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#252525</color>
+    <color name="iconColor">@color/primaryColor</color>
+
+    <color name="primaryColor">#3CA641</color>
+    <color name="secondaryColor">@color/grey</color>
+    <color name="warning">#FF0000</color>
+</resources>
