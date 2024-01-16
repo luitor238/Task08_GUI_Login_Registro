@@ -60,7 +60,8 @@
                         android:layout_height="wrap_content"
                         android:drawablePadding="10dp"
                         android:importantForAutofill="no"
-                        android:inputType="text" />
+                        android:inputType="text"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -95,7 +96,8 @@
                         android:importantForAutofill="no"
                         android:inputType="textPassword"
                         android:textColorHighlight="@color/primaryColor"
-                        android:textColorHint="@color/primaryColor" />
+                        android:textColorHint="@color/primaryColor"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                 </com.google.android.material.textfield.TextInputLayout>
             </TableRow>

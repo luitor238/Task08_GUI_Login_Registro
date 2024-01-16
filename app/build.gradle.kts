@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.task08_guiloginyregistro"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.task08_guiloginyregistro"
