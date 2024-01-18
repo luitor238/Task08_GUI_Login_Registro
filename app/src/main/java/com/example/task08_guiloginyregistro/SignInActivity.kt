@@ -17,10 +17,10 @@ class SignInActivity : AppCompatActivity() {
 
     private lateinit var email : EditText
     private lateinit var password : EditText
-    private lateinit var sex : EditText
-    private lateinit var natinality : EditText
-    private lateinit var hobbies : EditText
-    private lateinit var cv : EditText
+    private lateinit var sex : Character
+    private lateinit var nationality : String
+    private lateinit var hobbies : ArrayList<String>
+    private lateinit var cv : String
 
     private lateinit var radioButtonH : RadioButton
     private lateinit var radioButtonM : RadioButton
@@ -33,6 +33,7 @@ class SignInActivity : AppCompatActivity() {
     private lateinit var textViewResult: TextView
 
     private lateinit var auth: FirebaseAuth
+
     //VARIABLE SISTEMA LOG
     private val TAG = "LoginActivity"
 
@@ -59,7 +60,7 @@ class SignInActivity : AppCompatActivity() {
 
                     if (email.text.isNotEmpty() && password.text.isNotEmpty()){
 
-                        signInUser(email.text.toString(),password.text.toString(),)
+                        signInUser(email.text.toString(),password.text.toString(),sex,nationality,hobbies,cv)
 
                     } else{
                         textViewResult.visibility = View.VISIBLE
