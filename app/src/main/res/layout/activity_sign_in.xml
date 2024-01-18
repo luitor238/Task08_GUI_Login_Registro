@@ -148,6 +148,7 @@
                     android:text="@string/nationality"
                     android:textColor="@color/white" />
 
+
                 <Spinner
                     android:id="@+id/spnClase"
                     style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
@@ -206,21 +207,25 @@
                     android:text="@string/cv"
                     android:textColor="@color/white" />
 
-                <EditText
-                    android:id="@+id/EditTextCV"
-                    android:layout_width="117dp"
-                    android:layout_height="149dp"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="40dp"
-                    android:layout_span="2"
-                    android:autofillHints=""
-                    android:background="@null"
-                    android:gravity="top|start"
-                    android:lines="10"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/white"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:layout_span="2">
+                    <EditText
+                        android:id="@+id/EditTextCV"
+                        android:layout_width="match_parent"
+                        android:layout_height="149dp"
+                        android:autofillHints=""
+                        android:background="@null"
+                        android:gravity="top|start"
+                        android:lines="10"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/white"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <!--SIGN IN BUTTOM-->
